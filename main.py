@@ -2,25 +2,25 @@ import string
 import random
 
 if __name__ == "__main__":
-    s1 = string.ascii_lowercase
+    str1 = string.ascii_lowercase
     # print(s1)
-    s2 = string.ascii_uppercase
+    str2 = string.ascii_uppercase
     # print(s2)
-   # s3 = string.digits
+    str3 = string.digits
     # print(s3)
-   # s4 = string.punctuation
+    str4 = string.punctuation
     # print(s4)
-    plen = int(input("Enter password length\n")) #Todo1: Handle Gibberish
+    pwdlen = int(input("Enter password length\n"))
     s = []
-    s.extend(list(s1))
-    s.extend(list(s2))
-   # s.extend(list(s3))
-   # s.extend(list(s4))
+    s.extend(list(str1))
+    s.extend(list(str2))
+    s.extend(list(str3))
+    s.extend(list(str4))
     # print(s)
     # random.shuffle(s)
     # print(s)
     print("Your password is: ")
-    print("".join(random.sample(s, plen)))
-    # print("".join(s[0:plen]))
+    print("".join(random.sample(s, pwdlen)))
+    # print("".join(s[0:pwdlen]))
 
 a = input("")
